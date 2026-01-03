@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-dark text-light overflow-x-hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-surface rounded-full;
+}
+
+/* Utility Class untuk Efek Kaca (Glassmorphism) */
+@layer components {
+  .glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  }
+}
