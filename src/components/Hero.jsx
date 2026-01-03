@@ -6,7 +6,7 @@ import { Download, ArrowRight } from "lucide-react";
 
 // --- IMPORT FOTO PROFIL ---
 // Pastikan nama file di folder src/assets/ adalah profile.png (atau sesuaikan ekstensinya)
-import profilePic from "../assets/profile.png"; 
+import profilePic from "../assets/profile_ghilman.png"; 
 
 const Hero = () => {
   const [init, setInit] = useState(false);
