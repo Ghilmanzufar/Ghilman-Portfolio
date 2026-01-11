@@ -6,6 +6,7 @@ import sipentas2 from "../assets/kelurahan1.jpg";
 import sipentas3 from "../assets/kelurahan2.jpg";
 import sipentas4 from "../assets/kelurahan3.jpg";
 import sipentas5 from "../assets/kelurahan4.jpg";
+import sipentas6 from "../assets/kelurahan5.jpeg";
 import fruity from "../assets/fruity.jpg";
 import fruity2 from "../assets/fruity2.jpg";
 import fruity3 from "../assets/fruity3.jpg";
@@ -97,7 +98,7 @@ const Projects = () => {
       description: "Sistem transformasi digital untuk Kelurahan Klender. Mengintegrasikan Chatbot Cerdas (Groq Llama-3 + RAG) untuk menjawab pertanyaan warga otomatis, serta fitur booking antrean online.",
       // Ganti string 'image' jadi array 'images'
       images: [
-        sipentas1, sipentas2, sipentas3, sipentas4, sipentas5  // Fitur Antrean
+        sipentas1, sipentas2, sipentas3, sipentas4, sipentas5, sipentas6  // Fitur Antrean
       ],
       tech: ["Laravel", "Tailwind", "Python", "Llama-3 (AI)", "RAG"],
       demoLink: "#",
