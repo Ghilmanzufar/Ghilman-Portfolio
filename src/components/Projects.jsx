@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, Github, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+
+// --- IMPORTS GAMBAR ---
 import sipentas1 from "../assets/kelurahan.jpg";
 import sipentas2 from "../assets/kelurahan1.jpg";
 import sipentas3 from "../assets/kelurahan2.jpg";
@@ -12,31 +14,28 @@ import fruity2 from "../assets/fruity2.jpg";
 import fruity3 from "../assets/fruity3.jpg";
 import fruity4 from "../assets/fruity4.jpg";
 
-
-
+// Pastikan file gambar yang Anda upload tadi disimpan di folder assets
+// Saya menamainya 'gym_guide.png' sebagai contoh, sesuaikan dengan nama file aslinya
+import gym1 from "../assets/gym1.png"; 
 
 // --- KOMPONEN CAROUSEL (Slider Gambar) ---
 const ProjectCarousel = ({ images, title }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Fungsi Next Slide
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1 === images.length ? 0 : prev + 1));
   };
 
-  // Fungsi Prev Slide
   const prevSlide = () => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
   return (
     <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-surface/30 group">
-      
-      {/* 1. GAMBAR (Dengan Transisi) */}
       <div className="relative w-full h-full">
         <AnimatePresence mode="wait">
           <motion.img
-            key={currentIndex} // Kunci ini penting agar animasi jalan saat index berubah
+            key={currentIndex}
             src={images[currentIndex]}
             alt={`${title} screenshot ${currentIndex + 1}`}
             initial={{ opacity: 0, scale: 1.1 }}
@@ -46,15 +45,11 @@ const ProjectCarousel = ({ images, title }) => {
             className="absolute inset-0 w-full h-full object-cover"
           />
         </AnimatePresence>
-        
-        {/* Overlay Gelap saat hover agar tombol lebih jelas */}
         <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
 
-      {/* 2. TOMBOL NAVIGASI (Hanya muncul jika gambar > 1) */}
       {images.length > 1 && (
         <>
-          {/* Tombol Kiri */}
           <button 
             onClick={prevSlide}
             className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-dark/50 text-white backdrop-blur-sm border border-white/10 hover:bg-primary transition-all opacity-0 group-hover:opacity-100 translate-x-4 group-hover:translate-x-0 duration-300"
@@ -62,7 +57,6 @@ const ProjectCarousel = ({ images, title }) => {
             <ChevronLeft size={24} />
           </button>
 
-          {/* Tombol Kanan */}
           <button 
             onClick={nextSlide}
             className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-dark/50 text-white backdrop-blur-sm border border-white/10 hover:bg-primary transition-all opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 duration-300"
@@ -70,7 +64,6 @@ const ProjectCarousel = ({ images, title }) => {
             <ChevronRight size={24} />
           </button>
 
-          {/* Indikator Titik (Dots) di Bawah */}
           <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
             {images.map((_, idx) => (
               <div
@@ -89,17 +82,13 @@ const ProjectCarousel = ({ images, title }) => {
 
 // --- KOMPONEN UTAMA PROJECTS ---
 const Projects = () => {
-  // Data Projects (Updated dengan Array 'images')
   const projects = [
     {
       id: 1,
       title: "SiPentas (Pelayanan Pertanahan)",
       category: "GovTech & AI Integration",
       description: "Sistem transformasi digital untuk Kelurahan Klender. Mengintegrasikan Chatbot Cerdas (Groq Llama-3 + RAG) untuk menjawab pertanyaan warga otomatis, serta fitur booking antrean online.",
-      // Ganti string 'image' jadi array 'images'
-      images: [
-        sipentas1, sipentas2, sipentas3, sipentas4, sipentas5, sipentas6  // Fitur Antrean
-      ],
+      images: [sipentas1, sipentas2, sipentas3, sipentas4, sipentas5, sipentas6],
       tech: ["Laravel", "Tailwind", "Python", "Llama-3 (AI)", "RAG"],
       demoLink: "#",
       repoLink: "https://github.com/Ghilmanzufar",
@@ -109,24 +98,23 @@ const Projects = () => {
       title: "AI Smart Kitchen Assistant",
       category: "Computer Vision & Gen-AI",
       description: "Aplikasi cerdas yang menggabungkan 'Mata' (Computer Vision) dan 'Otak' (Gen-AI). Mendeteksi bahan makanan secara real-time dan memberikan rekomendasi resep.",
-      images: [
-        fruity, fruity2, fruity3, fruity4  // Recipe Result
-      ],
+      images: [fruity, fruity2, fruity3, fruity4],
       tech: ["Python", "YOLOv8", "Roboflow", "Laravel", "Tailwind"],
       demoLink: "#",
       repoLink: "https://github.com/Ghilmanzufar",
     },
+    // --- PROJECT BARU (GYM) ---
     {
       id: 3,
-      title: "MotoFix Booking System",
-      category: "Web Application",
-      description: "Platform reservasi bengkel motor untuk mengurai antrean fisik. Memungkinkan pelanggan memilih jadwal servis dan memantau status perbaikan.",
+      title: "Majapahit Gym System",
+      category: "Management System & Education",
+      description: "Sistem manajemen gym komprehensif yang berfokus pada edukasi member. Fitur unggulan 'Kamus Latihan' menyediakan panduan teknik (Bench Press, dll) terintegrasi video, absensi QR Code, dan pelaporan member otomatis.",
       images: [
-        "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=2072&auto=format&fit=crop", // Booking Form
-        "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop"  // Admin Panel
+        gym1, // Gambar screenshot gym yang Anda upload
+        // Anda bisa menambahkan gambar lain di sini jika ada, misal: gym2, gym3
       ],
-      tech: ["React.js", "Express.js", "MySQL", "Node.js"],
-      demoLink: "#",
+      tech: ["Laravel", "Tailwind CSS", "Alpine.js", "MySQL"],
+      demoLink: "#", // Masukkan link demo jika sudah deploy
       repoLink: "https://github.com/Ghilmanzufar",
     },
   ];
@@ -170,18 +158,16 @@ const Projects = () => {
               }`}
             >
               
-              {/* IMAGE CAROUSEL SECTION (Updated) */}
+              {/* IMAGE CAROUSEL SECTION */}
               <div className="w-full md:w-1/2">
                  <ProjectCarousel images={project.images} title={project.title} />
                  
-                 {/* Hiasan Dekoratif di belakang gambar */}
                  <div className={`hidden md:block absolute w-[45%] h-[400px] border-2 border-primary/30 rounded-2xl -z-10 transition-transform duration-500 translate-x-4 translate-y-4 ${index % 2 === 1 ? "left-0 -translate-x-4" : ""}`}></div>
               </div>
 
               {/* TEXT SECTION */}
               <div className="w-full md:w-1/2 space-y-6">
                 
-                {/* Category Badge */}
                 <span className="text-secondary text-sm font-bold tracking-widest uppercase">
                   {project.category}
                 </span>
@@ -194,7 +180,6 @@ const Projects = () => {
                   {project.description}
                 </p>
 
-                {/* Tech Stack Tags */}
                 <div className="flex flex-wrap gap-3">
                   {project.tech.map((tech, i) => (
                     <span key={i} className="px-3 py-1 text-xs font-medium bg-white/5 border border-white/10 rounded-full text-gray-300 hover:bg-primary/20 hover:text-primary hover:border-primary/30 transition-all cursor-default">
@@ -203,7 +188,6 @@ const Projects = () => {
                   ))}
                 </div>
 
-                {/* Action Buttons */}
                 <div className="flex gap-4 pt-4">
                   <a href={project.demoLink} className="flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-full font-semibold hover:bg-violet-700 transition-all shadow-[0_0_15px_rgba(139,92,246,0.3)] hover:shadow-[0_0_25px_rgba(139,92,246,0.5)]">
                     Live Demo <ExternalLink size={18} />
