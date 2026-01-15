@@ -16,7 +16,22 @@ import fruity4 from "../assets/fruity4.jpg";
 
 // Pastikan file gambar yang Anda upload tadi disimpan di folder assets
 // Saya menamainya 'gym_guide.png' sebagai contoh, sesuaikan dengan nama file aslinya
-import gym1 from "../assets/gym1.png"; 
+import gym1 from "../assets/gym1.png";
+import gym2 from "../assets/gym2.png"; 
+import gym3 from "../assets/gym3.jpeg";
+import gym4 from "../assets/gym4.png"; 
+import gym5 from "../assets/gym5.png"; 
+import gym6 from "../assets/gym6.png"; 
+import gym7 from "../assets/gym7.png"; 
+import gym8 from "../assets/gym8.png"; 
+import gym9 from "../assets/gym9.png"; 
+import gym10 from "../assets/gym10.png"; 
+import gym11 from "../assets/gym11.png"; 
+import gym12 from "../assets/gym12.png"; 
+import gym13 from "../assets/gym13.png"; 
+import gym14 from "../assets/gym14.png"; 
+import gym15 from "../assets/gym15.png"; 
+
 
 // --- KOMPONEN CAROUSEL (Slider Gambar) ---
 const ProjectCarousel = ({ images, title }) => {
@@ -110,7 +125,7 @@ const Projects = () => {
       category: "Management System & Education",
       description: "Sistem manajemen gym komprehensif yang berfokus pada edukasi member. Fitur unggulan 'Kamus Latihan' menyediakan panduan teknik (Bench Press, dll) terintegrasi video, absensi QR Code, dan pelaporan member otomatis.",
       images: [
-        gym1, // Gambar screenshot gym yang Anda upload
+        gym1, gym2, gym3, gym4, gym5, gym6, gym7, gym8, gym9, gym10, gym11, gym12, gym13, gym14, gym15 // Gambar screenshot gym yang Anda upload
         // Anda bisa menambahkan gambar lain di sini jika ada, misal: gym2, gym3
       ],
       tech: ["Laravel", "Tailwind CSS", "Alpine.js", "MySQL"],
