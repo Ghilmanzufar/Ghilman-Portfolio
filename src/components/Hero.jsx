@@ -129,8 +129,8 @@ const Hero = () => {
               {/* TOMBOL DOWNLOAD CV YANG SUDAH DIPERBAIKI */}
               {/* href="/CV_Ghilman_Zufar.pdf" mengacu ke file di folder public */}
               <a 
-                href="/CV_GhilmanZufar.pdf" 
-                download="CV_GhilmanZufar.pdf" // Atribut ini memaksa browser mendownload file, bukan membukanya
+                href="/Cv_GhilmanZufar.pdf" 
+                download="Cv_GhilmanZufar.pdf" // Atribut ini memaksa browser mendownload file, bukan membukanya
                 className="px-8 py-3 border border-white/20 hover:border-white/50 hover:bg-white/5 text-light font-medium rounded-full transition-all flex items-center justify-center gap-2 group"
               >
                 Download CV <Download size={20} className="group-hover:translate-y-1 transition-transform"/>
