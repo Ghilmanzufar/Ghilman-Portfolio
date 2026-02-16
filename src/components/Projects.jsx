@@ -105,7 +105,7 @@ const Projects = () => {
       description: "Sistem transformasi digital untuk Kelurahan Klender. Mengintegrasikan Chatbot Cerdas (Groq Llama-3 + RAG) untuk menjawab pertanyaan warga otomatis, serta fitur booking antrean online.",
       images: [sipentas1, sipentas2, sipentas3, sipentas4, sipentas5, sipentas6],
       tech: ["Laravel", "Tailwind", "Python", "Llama-3 (AI)", "RAG"],
-      demoLink: "#",
+      demoLink: "https://sistem-pertanahan-klender.wuaze.com/",
       repoLink: "https://github.com/Ghilmanzufar",
     },
     {
@@ -129,7 +129,7 @@ const Projects = () => {
         // Anda bisa menambahkan gambar lain di sini jika ada, misal: gym2, gym3
       ],
       tech: ["Laravel", "Tailwind CSS", "Alpine.js", "MySQL"],
-      demoLink: "#", // Masukkan link demo jika sudah deploy
+      demoLink: "https://demoaplikasigym.my.id/", // Masukkan link demo jika sudah deploy
       repoLink: "https://github.com/Ghilmanzufar",
     },
   ];
