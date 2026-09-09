@@ -5,8 +5,7 @@ import { motion } from "framer-motion";
 import { Download, ArrowRight } from "lucide-react";
 
 // --- IMPORT FOTO PROFIL ---
-// Pastikan nama file di folder src/assets/ adalah profile.png (atau sesuaikan ekstensinya)
-import profilePic from "../assets/profile_ghilman.png"; 
+import profilePic from "../assets/photo-pas.png"; 
 
 const Hero = () => {
   const [init, setInit] = useState(false);
@@ -126,11 +125,10 @@ const Hero = () => {
                 Lihat Projek <ArrowRight size={20} />
               </a>
               
-              {/* TOMBOL DOWNLOAD CV YANG SUDAH DIPERBAIKI */}
-              {/* href="/CV_Ghilman_Zufar.pdf" mengacu ke file di folder public */}
+              {/* TOMBOL DOWNLOAD CV */}
               <a 
-                href="/Cv_GhilmanZufar.pdf" 
-                download="Cv_GhilmanZufar.pdf" // Atribut ini memaksa browser mendownload file, bukan membukanya
+                href="/cv-ghilman.pdf" 
+                download="cv-ghilman.pdf"
                 className="px-8 py-3 border border-white/20 hover:border-white/50 hover:bg-white/5 text-light font-medium rounded-full transition-all flex items-center justify-center gap-2 group"
               >
                 Download CV <Download size={20} className="group-hover:translate-y-1 transition-transform"/>

@@ -56,9 +56,9 @@ const About = () => {
 
             <div className="space-y-6 text-gray-300 leading-relaxed text-lg text-justify">
               <p>
-                Halo! Saya <span className="text-white font-semibold">Ghilman Zufar</span>, mahasiswa Teknik Informatika di 
-                <span className="text-primary"> Universitas Gunadarma</span> dengan IPK <span className="text-secondary font-bold">3.75</span>. 
-                Saya memiliki ketertarikan mendalam pada pengembangan web modern dan teknologi kecerdasan buatan (AI).
+                Halo! Saya <span className="text-white font-semibold">Ghilman Zufar</span>, lulusan S1 Teknik Informatika di 
+                <span className="text-primary"> Universitas Gunadarma</span> dengan IPK <span className="text-secondary font-bold">3.76</span>. 
+                Saya memiliki keahlian mendalam pada pengembangan web modern dan teknologi kecerdasan buatan (AI).
               </p>
 
               <p>

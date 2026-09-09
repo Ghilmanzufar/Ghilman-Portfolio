@@ -2,26 +2,34 @@ import { motion } from "framer-motion";
 import { GraduationCap, Briefcase, Award, Calendar, Laptop } from "lucide-react";
 
 const Experience = () => {
-  // Data Timeline (Updated dengan Pengalaman Programmer SiPentas)
+  // Data Timeline
   const timelineData = [
     {
       id: 1,
-      type: "education",
-      title: "Universitas Gunadarma",
-      role: "S1 Teknik Informatika",
-      date: "2022 - Sekarang",
-      description: "Mahasiswa tingkat akhir (Semester 7) dengan IPK 3.74. Fokus mendalami Software Engineering dan Artificial Intelligence.",
-      icon: GraduationCap,
+      type: "work",
+      title: "PT Sugity Creatives",
+      role: "Computer Vision & Full Stack Engineer Intern",
+      date: "Mei 2026 - Agu 2026",
+      description: "Mengembangkan Industrial AI Camera Inspection System. Melatih model custom YOLOv8 untuk deteksi cacat visual komponen manufaktur dan membangun Operator & Admin Dashboard real-time (React.js, FastAPI, SSE) yang terintegrasi langsung ke sistem portal manufaktur perusahaan.",
+      icon: Briefcase,
     },
     {
       id: 2,
-      type: "work", // Ganti tipe jadi work
+      type: "work",
       title: "Kelurahan Klender (Project)",
-      role: "Full Stack Developer", // Role lebih spesifik
-      date: "2025", 
-      // Deskripsi gabungan yang menonjolkan Teknis & Dampak
+      role: "Full Stack Developer",
+      date: "2025",
       description: "Mengembangkan 'SiPentas', sistem digitalisasi pelayanan pertanahan. Mengintegrasikan AI Chatbot (Llama-3 + RAG) untuk layanan warga 24/7 dan sistem Booking Antrean Online dengan notifikasi Email otomatis.",
-      icon: Laptop, // Ganti icon jadi Laptop/Coding
+      icon: Laptop,
+    },
+    {
+      id: 3,
+      type: "education",
+      title: "Universitas Gunadarma",
+      role: "S1 Teknik Informatika",
+      date: "2022 - 2026",
+      description: "Lulusan S1 Informatika dengan IPK 3.76. Berfokus mendalami Software Engineering, Web Development, dan implementasi Machine Learning / Artificial Intelligence.",
+      icon: GraduationCap,
     },
   ];
 

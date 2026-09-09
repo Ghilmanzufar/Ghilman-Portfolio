@@ -3,19 +3,21 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, Github, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 // --- IMPORTS GAMBAR ---
+// Sugity Internship Project
+import sugity1 from "../assets/sugity.jpeg";
+import sugity2 from "../assets/sugity2.jpeg";
+import sugity3 from "../assets/sugity3.jpeg";
+
+// SiPentas Project
 import sipentas1 from "../assets/kelurahan.jpg";
 import sipentas2 from "../assets/kelurahan1.jpg";
 import sipentas3 from "../assets/kelurahan2.jpg";
 import sipentas4 from "../assets/kelurahan3.jpg";
 import sipentas5 from "../assets/kelurahan4.jpg";
 import sipentas6 from "../assets/kelurahan5.jpeg";
-import fruity from "../assets/fruity.jpg";
-import fruity2 from "../assets/fruity2.jpg";
-import fruity3 from "../assets/fruity3.jpg";
-import fruity4 from "../assets/fruity4.jpg";
 
-// Pastikan file gambar yang Anda upload tadi disimpan di folder assets
-// Saya menamainya 'gym_guide.png' sebagai contoh, sesuaikan dengan nama file aslinya
+// Majapahit Gym System
+import gymNew from "../assets/gym.jpeg";
 import gym1 from "../assets/gym1.png";
 import gym2 from "../assets/gym2.png"; 
 import gym3 from "../assets/gym3.jpeg";
@@ -100,6 +102,16 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "Industrial AI Camera Inspection System",
+      category: "Industrial AI & Full Stack",
+      description: "Sistem inspeksi visual berbasis AI untuk lini produksi manufaktur PT Sugity Creatives. Mengembangkan model kustom YOLOv8 untuk mendeteksi cacat visual komponen secara presisi, serta membangun Operator & Admin Dashboard real-time menggunakan React.js dan FastAPI dengan Server-Sent Events (SSE) yang terintegrasi ke sistem portal perusahaan.",
+      images: [sugity1, sugity2, sugity3],
+      tech: ["React.js", "FastAPI", "Python", "YOLOv8", "Computer Vision", "Server-Sent Events (SSE)", "REST API"],
+      demoLink: "#",
+      repoLink: "https://github.com/Ghilmanzufar",
+    },
+    {
+      id: 2,
       title: "SiPentas (Pelayanan Pertanahan)",
       category: "GovTech & AI Integration",
       description: "Sistem transformasi digital untuk Kelurahan Klender. Mengintegrasikan Chatbot Cerdas (Groq Llama-3 + RAG) untuk menjawab pertanyaan warga otomatis, serta fitur booking antrean online.",
@@ -109,27 +121,15 @@ const Projects = () => {
       repoLink: "https://github.com/Ghilmanzufar",
     },
     {
-      id: 2,
-      title: "AI Smart Kitchen Assistant",
-      category: "Computer Vision & Gen-AI",
-      description: "Aplikasi cerdas yang menggabungkan 'Mata' (Computer Vision) dan 'Otak' (Gen-AI). Mendeteksi bahan makanan secara real-time dan memberikan rekomendasi resep.",
-      images: [fruity, fruity2, fruity3, fruity4],
-      tech: ["Python", "YOLOv8", "Roboflow", "Laravel", "Tailwind"],
-      demoLink: "#",
-      repoLink: "https://github.com/Ghilmanzufar",
-    },
-    // --- PROJECT BARU (GYM) ---
-    {
       id: 3,
       title: "Majapahit Gym System",
       category: "Management System & Education",
       description: "Sistem manajemen gym komprehensif yang berfokus pada edukasi member. Fitur unggulan 'Kamus Latihan' menyediakan panduan teknik (Bench Press, dll) terintegrasi video, absensi QR Code, dan pelaporan member otomatis.",
       images: [
-        gym1, gym2, gym3, gym4, gym5, gym6, gym7, gym8, gym9, gym10, gym11, gym12, gym13, gym14, gym15 // Gambar screenshot gym yang Anda upload
-        // Anda bisa menambahkan gambar lain di sini jika ada, misal: gym2, gym3
+        gymNew, gym1, gym2, gym3, gym4, gym5, gym6, gym7, gym8, gym9, gym10, gym11, gym12, gym13, gym14, gym15
       ],
       tech: ["Laravel", "Tailwind CSS", "Alpine.js", "MySQL"],
-      demoLink: "https://demoaplikasigym.my.id/", // Masukkan link demo jika sudah deploy
+      demoLink: "https://demoaplikasigym.my.id/",
       repoLink: "https://github.com/Ghilmanzufar",
     },
   ];
