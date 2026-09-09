@@ -63,8 +63,7 @@ const About = () => {
 
               <p>
                 Berbekal pengalaman teknis dalam membangun aplikasi menggunakan <span className="text-white">React.js, Laravel, dan Python</span>, 
-                saya senang memecahkan masalah kompleks menjadi solusi digital yang elegan. Saya juga aktif berorganisasi, 
-                salah satunya sebagai tim medis di acara <span className="italic">Bluecamp</span> (LDKM), yang melatih kepemimpinan dan empati saya dalam tim.
+                saya senang memecahkan masalah kompleks menjadi solusi digital yang elegan.
               </p>
 
               <p>
