@@ -37,6 +37,8 @@ import gym15 from "../assets/gym15.png";
 // JobTrack Project
 import jobtrack1 from "../assets/jobtrack1.jpg";
 import jobtrack2 from "../assets/jobtrack2.jpg";
+import jobtrack3 from "../assets/jobtrack3.png";
+import jobtrack4 from "../assets/jobtrack4.png";
 
 
 // --- KOMPONEN CAROUSEL (Slider Gambar) ---
@@ -141,7 +143,7 @@ const Projects = () => {
       title: "JobTrack",
       category: "SaaS & Full Stack",
       description: "Aplikasi pelacak lamaran kerja personal untuk fresh graduate dan job seeker. Fitur unggulan: Kanban Board 9-tahap (drag & drop), Vault Dokumen (simpan CV & cover letter per versi), Agenda & pengingat in-app, Direktori lowongan real-time (scraper Disnakerja), dan Browser Extension untuk auto-fill form lamaran dari LinkedIn, Glints, Jobstreet, serta Indeed.",
-      images: [jobtrack1, jobtrack2],
+      images: [jobtrack1, jobtrack2, jobtrack3, jobtrack4],
       tech: ["React.js", "TypeScript", "Node.js", "Express", "PostgreSQL", "Prisma", "Vite", "Framer Motion", "JWT"],
       demoLink: "https://jobtrackid.my.id/",
       repoLink: "https://github.com/Ghilmanzufar/track-lowongan-kerja",
