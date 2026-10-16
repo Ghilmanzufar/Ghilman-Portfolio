@@ -143,7 +143,7 @@ const Projects = () => {
       description: "Aplikasi pelacak lamaran kerja personal untuk fresh graduate dan job seeker. Fitur unggulan: Kanban Board 9-tahap (drag & drop), Vault Dokumen (simpan CV & cover letter per versi), Agenda & pengingat in-app, Direktori lowongan real-time (scraper Disnakerja), dan Browser Extension untuk auto-fill form lamaran dari LinkedIn, Glints, Jobstreet, serta Indeed.",
       images: [jobtrack1, jobtrack2],
       tech: ["React.js", "TypeScript", "Node.js", "Express", "PostgreSQL", "Prisma", "Vite", "Framer Motion", "JWT"],
-      demoLink: "https://github.com/Ghilmanzufar/track-lowongan-kerja",
+      demoLink: "https://jobtrackid.my.id/",
       repoLink: "https://github.com/Ghilmanzufar/track-lowongan-kerja",
     },
   ];
