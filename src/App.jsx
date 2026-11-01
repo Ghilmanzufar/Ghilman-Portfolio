@@ -4,6 +4,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
+import Certifications from "./components/Certifications";
 import Articles from "./components/Articles";
 import Contact from "./components/Contact"; // <--- Import Final
 
@@ -19,6 +20,7 @@ function App() {
         <Skills />
         <Projects />
         <Experience />
+        <Certifications />
         <Articles />
         <Contact /> {/* <--- Finish Line! */}
       </main>
