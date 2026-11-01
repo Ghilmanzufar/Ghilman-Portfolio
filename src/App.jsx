@@ -4,6 +4,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
+import Articles from "./components/Articles";
 import Contact from "./components/Contact"; // <--- Import Final
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Skills />
         <Projects />
         <Experience />
+        <Articles />
         <Contact /> {/* <--- Finish Line! */}
       </main>
     </div>
